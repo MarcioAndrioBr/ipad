@@ -1,4 +1,3 @@
-@media (max-width: 768px) { /* Estilos para telas menores (celulares) */
     body {
         font-size: 16px;
         background: url('img/fundocelular.jpeg') no-repeat center fixed;
@@ -41,71 +40,6 @@
     .conteiner{
         width: 100%;
     }
-}
-  
-@media (min-width: 769px) { /* Estilos para telas maiores (tablets e desktops) */
-
-    body {
-        font-size: 1em; /* Usando unidade relativa */
-        background: url('img/fundodesktop.jpg') no-repeat center fixed;
-        background-size: cover;
-        opacity: 1;
-        display: flex; /* Ativa o Flexbox no body */
-        justify-content: center; /* Centraliza horizontalmente */
-        /* align-items: center; /* Removi a centralização vertical por enquanto, teste sem ela */
-        min-height: 100vh; /* Garante que o body tenha pelo menos a altura da tela */
-        margin: 0; /* Remove margens padrão do body */
-    }
-    .site{
-        display: flex;
-        /* flex-direction: column; */
-        /* flex-direction: row; /**/
-        justify-content: center;
-        gap: 24px;
-        width: 100%; /* O site ocupa toda a largura disponível */
-        padding: 20px; /* Adiciona um espaçamento interno */
-        box-sizing: border-box; /* Garante que o padding não aumente a largura */
-    }
-
-
-
-    body1 {
-        font-size: 16px;
-        background: url('img/fundodesktop.jpg') no-repeat center fixed;
-        background-size: 100% 100%; /* Faz o fundo cobrir toda a tela, independentemente da orientação */
-        /*height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
-        font-size: 100%;
-        background-size: cover;
-        opacity: 1;
-        display: flex; /* Ativa o Flexbox no body */
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
-    
-    }
-    .site1{
-        display: flex;
-        /*flex-direction: column;
-        flex-direction: row; /**/
-        justify-content: center;
-        gap: 24px;
-    }
-    .relogio-calendario {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        position: relative; /* Adicionado para posicionar o container */
-    }
-    .logo{
-        display: flex;
-        padding-top: 60px;
-        filter: invert(1);
-        max-width: 500px; /* Define a largura máxima da caixa-icone */
-        height: auto; /* Permite que a altura da caixa-icone se ajuste ao conteúdo */
-    }    
-    .conteiner{
-        width: 80%;
-    }
-}
 
 #advocaciabr {
     scroll-margin-top: 100px; /* Ajuste conforme a altura do cabeçalho */
