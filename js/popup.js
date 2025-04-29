@@ -1,20 +1,34 @@
+let url = "https://siga.edubox.pt/auth";
+
 const linkSiga = document.getElementById('linkSiga');
-        const popup = document.getElementById('popup');
-        let url = "https://siga.edubox.pt/auth";
+const linkInovar = document.getElementById('inovar');
+const linkClassroom = document.getElementById('linkClassroom');
+const popup1 = document.getElementById('popup');
+const overlay = document.getElementById('overlay');
 
-        // Quando clicar no link
-        linkSiga.addEventListener('click', function(e) {
-            e.preventDefault(); // Impede o comportamento padrão do link
-            mostrarPopup();
-        });
+linkSiga.addEventListener('click', function(e) {
+    e.preventDefault();
+    url = "https://siga.edubox.pt/auth";
+    mostrarPopup();
+});
 
-        // Função para mostrar o pop-up
-        function mostrarPopup() {
-            popup.style.display = 'block';
-            overlay.style.display = 'block';
-        }
+linkInovar.addEventListener('click', function(e) {
+    e.preventDefault();
+    url = "https://aeen.inovarmais.com/consulta/app/index.html#/login";
+    mostrarPopup();
+});
 
-        // Função para continuar para o site
-        function continuar() {
-            window.location.href = url;
-        }
+linkClassroom.addEventListener('click', function(e) {
+    e.preventDefault();
+    url = "https://classroom.google.com/u/0/s";
+    mostrarPopup();
+});
+
+function mostrarPopup() {
+    popup1.style.display = 'block';
+    overlay.style.display = 'block';
+}
+
+function continuar() {
+    window.location.href = url;
+}
